@@ -1,0 +1,420 @@
+ * {
+
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins';
+
+  
+  /* for adjust border in width */
+
+}
+
+.logo {
+  text-align: center;
+  margin: 0px auto;
+  padding: 20px 0px
+}
+.nav_area {
+  background: white;
+  text-align: center;
+  
+}
+.nav_area ul li {
+  list-style: none;
+  padding :10px 16px;
+  display: inline-block;
+  position : relative;
+}
+.nav_area ul li a {
+   color: black;
+   text-decoration: none;
+   font-size: 14px;
+   
+ }
+ .nav_area ul li a:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  padding: 12px 12px 12px 12px;  
+  position: static;
+  transition: 0.3s
+ }
+ 
+.banner {
+  width: 100%;
+  min-height: 120vh;
+  background: url('Images/banner.jpeg') no-repeat;
+  background-size: cover;
+  position:relative;
+  display: flex;  
+  }
+.text-block {
+  color: white;
+  width: 80%;
+  position : absolute;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%)
+}
+.text-block p{
+  font-size: 15px
+}
+.button_first {
+  border: 2px solid white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 12px;
+  margin-top: 16px;
+  position: relative;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border-radius: 40px
+}
+.button_first:hover{
+  border: 2px solid black;
+  background: black;
+  color:white;
+  transition: 0.7s
+
+  
+}
+
+nav .fa-circle-xmark {
+  display: none;
+}
+nav .fa-bars {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  nav .fa-circle-xmark {
+    display: inline-block;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+  
+  .fa-bars {
+      position:absolute;
+      top:28px;
+      left:10px;
+      font-size:18px;
+      cursor: pointer
+      
+    }
+    
+  .text-block {
+    width: 70%
+}
+  .nav_area {
+    position: absolute;
+    color: blue;
+    background:white;
+    width:200px;
+    height:100vh;
+    text-align:left;
+    z-index:2;
+    top:0;
+    left:-200px;
+    transition: 1s
+    
+  }
+  .nav_area ul li {
+    display: block;
+   
+  }
+  
+     .fa-circle-xmark {
+      font-size: 25px;
+      position: relative;
+
+      margin : 10px;
+      color: black;
+      
+    }
+
+
+}
+
+
+/* Grid system */
+
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* for doing break, it should be break line mean ke wo break hojaye gi after every row */
+
+.row::after {
+  content: ""; 
+  /* for doing next line*/
+  clear: both;
+  display:table
+}
+/* it is for thaat ke har div ki ya kisi syntax ki jho class hopgi uska jo starting point hoga wo colummn se hoga to column x lkha ske agy hum defne kry gy */
+[class*="col-"] {
+  float : left;
+  padding: 15px;
+  
+
+}
+
+.row  {
+  background: white;
+  display:flex
+}
+.text {
+ color :black;  
+}
+.button {
+  font-size: 2px;
+  width: 70%;
+  padding: 5px;
+  margin-top: 15px;
+  
+  border-radius: 15px;
+  background: #083C77 ;
+  color: white;
+  cursor:pointer;
+  box-shadow: none;
+}
+.button:hover {
+  background:  white;
+  color: black;
+  transition: 1s;
+  box-shadow: none;
+  
+}
+.font {
+  font-size: medium;
+  border-radius: 14px;
+  transition: 1s
+}
+.list {
+color: black ;
+margin : 20px;
+}
+.headings {
+  text-align: center;
+  margin:40px;
+  padding:20px
+
+}
+
+.background {
+
+
+ width: 240px;
+ height: 220px
+}
+.background_html {
+
+  width: 240px;
+  height: 220px
+}
+.css_list  {
+  margin: 20px
+}
+.js_list {
+  margin:20px
+}
+.price_css {
+  /* WE are Using display:inline-block beacuase we are changing the tag of <b> in this margin effect cant do something special */
+display: inline-block;
+margin-top: 15px; /* ya 15px, jo suit kare */
+
+}
+.price_html {
+  display: inline-block;
+  margin-top: 15px
+}
+.price_js {
+  display: inline-block;
+  margin-top: 15px
+}
+.img_js {
+  height: 35vh;
+  width: 240px;
+  height: 220px
+ }
+.button_css {
+  font-size: 2px;
+  width: 70%;
+  padding: 5px;
+  margin-top: 15px;
+  
+  border-radius: 15px;
+  background: #083C77 ;
+  color: white;
+  cursor:pointer
+}
+.button_js {
+  
+  font-size: 2px;
+  width: 70%;
+  padding: 5px;
+  margin-top: 15px;
+  
+  border-radius: 15px;
+  background: #083C77 ;
+  color: white;
+  cursor:pointer;
+  box-shadow: none;
+
+}
+  .col-4 {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+    background: white;
+    position: relative; /* For better control on hover animations */
+  }
+  
+  /* Hover effect with transform and shadow */
+  .col-4:hover {
+    transform: translateY(-10px) scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: bounce 0.3s ease-out; /* Animation to bounce */
+  }
+  /* Add a bounce effect */
+  @keyframes bounce {
+    0% { transform: translateY(-10px) scale(1.05); }
+    50% { transform: translateY(5px) scale(1.05); }
+    100% { transform: translateY(-10px) scale(1.05); }
+  }
+  
+  .headi {
+    text-align: center;
+    margin:20px;
+    padding:10px
+  }
+  .texti {
+    text-align: center;
+    padding:15px;
+    margin:20px
+  }
+.taha {
+  font-size: 10px;
+  height: 40vh;
+  border-radius: 70px;
+  border:  transparent
+}
+.edit1 {
+  font-size: 10px;
+  height: 40vh;
+  border-radius: 70px;
+  border:  transparent
+}
+.textof {
+  padding:10px;
+  margin:10px;
+}
+.textin {
+  padding:10px;
+  margin:10px;
+}
+.textout {
+  padding:10px;
+  margin:10px;
+
+
+}
+.paragrpah2 {
+  margin:20px;
+  padding-bottom:-28px
+}
+.paragraph {
+  margin:20px;
+  padding-bottom:-28px
+}
+.edit2 {
+  
+  font-size: 10px;
+  height: 40vh;
+  border-radius: 700px;
+  border:  transparent
+}
+.paragraph3 {
+  margin:20px;
+  padding-bottom:-28px
+}
+.edit3 {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  font-size: 10px;
+  height: 40vh;
+  border-radius: 700px;
+ 
+
+}
+.textat {
+  padding:10px;
+  margin:10px;
+}
+.paragraph4 {
+  margin:10px;
+  padding-bottom:10px;
+  margin-top:-8px
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top:40px;
+object-fit: cover;
+
+
+}
+
+
+.overlay {
+  position: absolute;
+  top:0%;
+  left:0%;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Transparent dark overlay */
+  z-index: 1;
+  width:200vh
+  
+}
+.text1 {
+
+  position: absolute;
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  text-align: center;
+}
+
+  
+
+
+
+
+
+ 
+
+
+
+/*  Grid system */
