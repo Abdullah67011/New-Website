@@ -376,9 +376,9 @@ margin-top: 15px; /* ya 15px, jo suit kare */
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  margin-top:40px;
-object-fit: cover;
-
+  margin-top:50px
+  object-fit: cover;
+  
 
 }
 
@@ -414,6 +414,7 @@ object-fit: cover;
 
 
  
+
 
 
 
