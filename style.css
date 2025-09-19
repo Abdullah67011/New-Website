@@ -373,7 +373,7 @@ margin-top: 15px; /* ya 15px, jo suit kare */
 
 .video-container {
   position: relative;
-  width: 100%;
+  width: 150%;
   height: 100vh;
   overflow: hidden;
   margin-top:60px
@@ -419,4 +419,5 @@ margin-top: 15px; /* ya 15px, jo suit kare */
 
 
 /*  Grid system */
+
 
